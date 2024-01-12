@@ -18,10 +18,8 @@ return {
           'cssls',
           'tailwindcss',
           'html',
-          'eslint',
           'tsserver',
           'sqls',
-          'solargraph',
           'rubocop',
           'rust_analyzer',
           'elixirls',
@@ -42,11 +40,8 @@ return {
       lspconfig.cssls.setup({})
       lspconfig.tailwindcss.setup({})
       lspconfig.html.setup({})
-      lspconfig.eslint.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.sqls.setup({})
-      lspconfig.solargraph.setup({})
-      lspconfig.rubocop.setup({})
       lspconfig.rust_analyzer.setup({})
       lspconfig.elixirls.setup({})
 
