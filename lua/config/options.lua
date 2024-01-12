@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 local opt = vim.opt
 
@@ -8,4 +8,3 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.relativenumber = true
 opt.cursorline = true
-
