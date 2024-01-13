@@ -10,3 +10,4 @@ opt.number = true
 opt.relativenumber = true
 opt.cursorline = true
 opt.colorcolumn = { 80, 120 }
+opt.signcolumn = "yes"
