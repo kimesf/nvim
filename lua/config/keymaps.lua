@@ -1,6 +1,8 @@
 local map = vim.keymap
 local options = { noremap = true, silent = true }
 
+map.set("n", "<leader>w", ":update<CR>", options)
+
 map.set("i", "jk", "<Esc>", options)
 map.set("i", "kj", "<Esc>", options)
 map.set("i", "kj", "<Esc>", options)
