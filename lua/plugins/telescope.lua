@@ -22,6 +22,8 @@ return {
         pickers = {
           find_files = {
             find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+            hidden = true,
+            no_ignore = true,
           },
           live_grep = {
             additional_args = function(_opts)
