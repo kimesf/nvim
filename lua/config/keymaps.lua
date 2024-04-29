@@ -5,7 +5,6 @@ map.set("n", "<leader>w", ":update<CR>", options)
 
 map.set("i", "jk", "<Esc>", options)
 map.set("i", "kj", "<Esc>", options)
-map.set("i", "kj", "<Esc>", options)
 
 map.set("n", "<C-h>", "<C-w>h", options)
 map.set("n", "<C-j>", "<C-w>j", options)
