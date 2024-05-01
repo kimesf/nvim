@@ -1,6 +1,5 @@
 return {
 	"akinsho/bufferline.nvim",
-	version = "*",
 	keys = {
 		{ "<leader>bo", "<Cmd>BufferLineCloseOthers<CR>", desc = "Delete other buffers" },
 		{ "<leader>br", "<Cmd>BufferLineCloseRight<CR>", desc = "Delete buffers to the right" },
