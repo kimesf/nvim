@@ -15,6 +15,7 @@ return {
           "dockerls",
           "docker_compose_language_service",
 					"tsserver",
+          "sorbet",
         }
       })
     end
@@ -29,6 +30,7 @@ return {
 			lspconfig.dockerls.setup({})
 			lspconfig.docker_compose_language_service.setup({})
 			lspconfig.tsserver.setup({})
+			lspconfig.sorbet.setup({})
 
       -- lspconfig.rubocop.setup({})
 
