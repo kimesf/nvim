@@ -14,7 +14,7 @@ return {
           "lua_ls",
           "dockerls",
           "docker_compose_language_service",
-					"tsserver",
+					"ts_ls",
           -- "sorbet",
         }
       })
@@ -29,7 +29,7 @@ return {
 			lspconfig.lua_ls.setup({})
 			lspconfig.dockerls.setup({})
 			lspconfig.docker_compose_language_service.setup({})
-			lspconfig.tsserver.setup({})
+			lspconfig.ts_ls.setup({})
 			-- lspconfig.sorbet.setup({})
 
       -- lspconfig.rubocop.setup({})
@@ -61,7 +61,7 @@ return {
 	-- 				-- "cssls",
 	-- 				"tailwindcss",
 	-- 				"html",
-	-- 				"tsserver",
+	-- 				"ts_ls",
 	-- 				-- "sqls",
 	-- 				"rubocop",
 	-- 				-- "rust_analyzer",
@@ -133,7 +133,7 @@ return {
 	-- 		-- lspconfig.cssls.setup({})
 	-- 		lspconfig.tailwindcss.setup({})
 	-- 		lspconfig.html.setup({})
-	-- 		lspconfig.tsserver.setup({})
+	-- 		lspconfig.ts_ls.setup({})
 	-- 		-- lspconfig.sqls.setup({})
 	-- 		-- lspconfig.rust_analyzer.setup({})
 	-- 		-- lspconfig.elixirls.setup({})
