@@ -11,11 +11,11 @@ return {
       require("mason-lspconfig").setup({
         ensured_installed = {
           "ruby_lsp",
+          "standardrb",
           "lua_ls",
           "dockerls",
           "docker_compose_language_service",
-					"ts_ls",
-          -- "sorbet",
+          "ts_ls",
         }
       })
     end
@@ -25,14 +25,20 @@ return {
 		config = function()
 			local lspconfig = require("lspconfig")
 
-      lspconfig.ruby_lsp.setup({})
+      lspconfig.ruby_lsp.setup({
+        init_options = {
+          formatter = 'standard',
+          linters = { 'standard' },
+        },
+      })
+      -- lspconfig.standardrb.setup({})
+			-- lspconfig.sorbet.setup({})
+      -- lspconfig.rubocop.setup({})
+
 			lspconfig.lua_ls.setup({})
 			lspconfig.dockerls.setup({})
 			lspconfig.docker_compose_language_service.setup({})
 			lspconfig.ts_ls.setup({})
-			-- lspconfig.sorbet.setup({})
-
-      -- lspconfig.rubocop.setup({})
 
 			vim.keymap.set("n", "gl", vim.diagnostic.open_float)
 
