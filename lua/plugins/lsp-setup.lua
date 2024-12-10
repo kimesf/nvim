@@ -39,6 +39,7 @@ return {
 			lspconfig.dockerls.setup({})
 			lspconfig.docker_compose_language_service.setup({})
 			lspconfig.ts_ls.setup({})
+      lspconfig.eslint.setup({})
 
 			vim.keymap.set("n", "gl", vim.diagnostic.open_float)
 
