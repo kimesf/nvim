@@ -36,7 +36,14 @@ return {
           },
           live_grep = {
             additional_args = function(_opts)
-              return { "--hidden" }
+              return {
+                "--hidden",
+                "--glob", "!**/.git/*",
+                "--glob", "!**/vendor/*",
+                "--glob", "!**/node_modules/*",
+                "--glob", "!**/public/*",
+                "--glob", "!**/tmp/*"
+              }
             end,
           },
         },
