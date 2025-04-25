@@ -12,3 +12,5 @@ map.set("n", "<C-k>", "<C-w>k", options)
 map.set("n", "<C-l>", "<C-w>l", options)
 
 map.set("n", "<leader>l", ":noh<CR>", options)
+
+map.set("v", "<leader>p", '"_dP', options)
