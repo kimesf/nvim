@@ -16,6 +16,7 @@ return {
           "dockerls",
           "docker_compose_language_service",
           "ts_ls",
+          "terraformls",
         }
       })
     end
@@ -40,6 +41,7 @@ return {
 			lspconfig.docker_compose_language_service.setup({})
 			lspconfig.ts_ls.setup({})
       lspconfig.eslint.setup({})
+      lspconfig.terraformls.setup({})
 
 			vim.keymap.set("n", "gl", vim.diagnostic.open_float)
 
