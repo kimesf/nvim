@@ -25,24 +25,25 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			local lspconfig = require("lspconfig")
+			require("lspconfig")
 
-      lspconfig.ruby_lsp.setup({
+      vim.lsp.config("ruby_lsp", {
         init_options = {
           formatter = 'standard',
           linters = { 'standard' },
         },
       })
-      -- lspconfig.standardrb.setup({})
-			-- lspconfig.sorbet.setup({})
-      -- lspconfig.rubocop.setup({})
 
-			lspconfig.lua_ls.setup({})
-			lspconfig.dockerls.setup({})
-			lspconfig.docker_compose_language_service.setup({})
-			lspconfig.ts_ls.setup({})
-      lspconfig.eslint.setup({})
-      lspconfig.terraformls.setup({})
+      -- vim.lsp.standardrb.setup({})
+			-- vim.lsp.sorbet.setup({})
+      -- vim.lsp.rubocop.setup({})
+
+			vim.lsp.config("lua_ls", {})
+			vim.lsp.config("dockerls", {})
+			vim.lsp.config("docker_compose_language_service", {})
+			vim.lsp.config("ts_ls", {})
+      vim.lsp.config("eslint", {})
+      vim.lsp.config("terraformls", {})
 
 			vim.keymap.set("n", "gl", vim.diagnostic.open_float)
 

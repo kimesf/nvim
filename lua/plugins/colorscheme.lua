@@ -9,7 +9,6 @@
 --   end,
 -- }
 
-
 return {
   "zenbones-theme/zenbones.nvim",
   lazy = false,
