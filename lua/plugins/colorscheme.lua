@@ -29,6 +29,9 @@ return {
     -- Function calls: bold yellow
     vim.api.nvim_set_hl(0, "@function.call", { fg = "#e5c07b", bold = true })
 
+    -- Class/modules definitions
+    vim.api.nvim_set_hl(0, "@type", { fg = "#b48ead", bold = true })
+
     -- Comments: green, bold
     vim.api.nvim_set_hl(0, "Comment", { fg = "#8aa889", bold = true })
 
