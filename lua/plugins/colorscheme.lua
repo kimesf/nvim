@@ -23,11 +23,11 @@ return {
     -- Softer colorcolumn
     vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#20232c" })
 
-    -- Function definitions: bold white
-    vim.api.nvim_set_hl(0, "@function", { fg = "#ffffff", bold = true })
+    -- Function definitions: bold yellow
+    vim.api.nvim_set_hl(0, "@function", { fg = "#e5c07b", bold = true })
 
-    -- Function calls: bold yellow
-    vim.api.nvim_set_hl(0, "@function.call", { fg = "#e5c07b", bold = true })
+    -- Function calls: bold white
+    vim.api.nvim_set_hl(0, "@function.call", { fg = "#ffffff", bold = true })
 
     -- Class/modules definitions
     vim.api.nvim_set_hl(0, "@type", { fg = "#b48ead", bold = true })
