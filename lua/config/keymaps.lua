@@ -25,3 +25,9 @@ map.set("v", "<leader>y", '"+y', options)
 
 -- Copy current line in normal mode to system clipboard
 map.set("n", "<leader>Y", '"+yy', options)
+
+-- Copy relative file path to system clipboard
+map.set("n", "<leader>dy", ":let @+ = expand('%:.')<CR>", options)
+
+-- Copy absolute file path to system clipboard
+map.set("n", "<leader>dY", ":let @+ = expand('%:p')<CR>", options)
