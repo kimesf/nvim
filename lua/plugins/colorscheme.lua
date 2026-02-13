@@ -33,7 +33,7 @@ return {
     vim.api.nvim_set_hl(0, "@type", { fg = "#b48ead", bold = true })
 
     -- Comments: green, bold
-    vim.api.nvim_set_hl(0, "Comment", { fg = "#8aa889", bold = true })
+    vim.api.nvim_set_hl(0, "Comment", { fg = "#8aa889" })
 
     -- Good themes:
     -- vim.cmd.colorscheme("kanagawabones")
