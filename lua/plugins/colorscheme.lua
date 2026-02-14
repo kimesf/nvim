@@ -30,7 +30,7 @@ return {
     vim.api.nvim_set_hl(0, "@function.call", { fg = "#ffffff", bold = true })
 
     -- Class/modules definitions
-    vim.api.nvim_set_hl(0, "@type", { fg = "#b48ead", bold = true })
+    vim.api.nvim_set_hl(0, "@type", { fg = "#88c0d0", bold = true })
 
     -- Comments: green, bold
     vim.api.nvim_set_hl(0, "Comment", { fg = "#8aa889" })
